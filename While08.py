@@ -6,4 +6,10 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    i = 0
+    ans = 0
+    while i < len(s):
+        if int(s[i]) % 2 != 0:
+            ans += 1
+        i += 1
+    return ans
