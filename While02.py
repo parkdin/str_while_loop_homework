@@ -6,4 +6,15 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    k = 0
+    while k < len(s):
+        space = s.index(' ')
+        start = s[:space]
+        end = s[space + 1:]
+        s_e = start + end
+        k += 1
+        num = ''
+        for i in s_e:
+            if i.isdigit():
+                num += i
+    return len(s_e) - len(num)
