@@ -7,3 +7,13 @@ def main(s):
     Returns:
         int: return answer
     """
+    s = s.lower()
+    i = 0
+    ans = 0
+    vowel = "a", "e", "i", "o", "u"
+    while i < len(s):
+        if not s[i] in vowel:
+            ans += 1
+        i += 1
+    return ans
+print(main("CodeschoolUz"))
