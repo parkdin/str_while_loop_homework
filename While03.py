@@ -6,4 +6,12 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    import string
+    punc = string.punctuation
+    i = 0
+    ans = 0
+    while i < len(s):
+        if s[i] in punc:
+            ans += 1
+        i += 1
+    return ans
